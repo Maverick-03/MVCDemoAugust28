@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		C31EE7F62134983D00B8AFBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31EE7F52134983D00B8AFBE /* AppDelegate.swift */; };
-		C31EE7F82134983D00B8AFBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31EE7F72134983D00B8AFBE /* ViewController.swift */; };
+		C31EE7F82134983D00B8AFBE /* FoodController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31EE7F72134983D00B8AFBE /* FoodController.swift */; };
 		C31EE7FB2134983D00B8AFBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31EE7F92134983D00B8AFBE /* Main.storyboard */; };
 		C31EE7FD2134984000B8AFBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C31EE7FC2134984000B8AFBE /* Assets.xcassets */; };
 		C31EE8002134984000B8AFBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31EE7FE2134984000B8AFBE /* LaunchScreen.storyboard */; };
+		C31EE80C2134A1E000B8AFBE /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31EE80B2134A1E000B8AFBE /* Food.swift */; };
+		C31EE80E2134A2B200B8AFBE /* FoodUIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31EE80D2134A2B200B8AFBE /* FoodUIController.swift */; };
+		C3C97858213636EB00DA0F51 /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C97856213636EB00DA0F51 /* FoodCell.swift */; };
+		C3C97859213636EB00DA0F51 /* FoodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3C97857213636EB00DA0F51 /* FoodCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C31EE7F22134983D00B8AFBE /* MVCDemoAugust28.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVCDemoAugust28.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C31EE7F52134983D00B8AFBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C31EE7F72134983D00B8AFBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C31EE7F72134983D00B8AFBE /* FoodController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodController.swift; sourceTree = "<group>"; };
 		C31EE7FA2134983D00B8AFBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C31EE7FC2134984000B8AFBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C31EE7FF2134984000B8AFBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C31EE8012134984000B8AFBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C31EE80B2134A1E000B8AFBE /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		C31EE80D2134A2B200B8AFBE /* FoodUIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodUIController.swift; sourceTree = "<group>"; };
+		C3C97856213636EB00DA0F51 /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
+		C3C97857213636EB00DA0F51 /* FoodCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,50 @@
 		C31EE7F42134983D00B8AFBE /* MVCDemoAugust28 */ = {
 			isa = PBXGroup;
 			children = (
+				C31EE8072134A18700B8AFBE /* Model */,
+				C31EE8092134A1A700B8AFBE /* View */,
+				C31EE80A2134A1B500B8AFBE /* Controller */,
 				C31EE7F52134983D00B8AFBE /* AppDelegate.swift */,
-				C31EE7F72134983D00B8AFBE /* ViewController.swift */,
-				C31EE7F92134983D00B8AFBE /* Main.storyboard */,
 				C31EE7FC2134984000B8AFBE /* Assets.xcassets */,
 				C31EE7FE2134984000B8AFBE /* LaunchScreen.storyboard */,
 				C31EE8012134984000B8AFBE /* Info.plist */,
 			);
 			path = MVCDemoAugust28;
+			sourceTree = "<group>";
+		};
+		C31EE8072134A18700B8AFBE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C31EE80B2134A1E000B8AFBE /* Food.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C31EE8092134A1A700B8AFBE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3C97857213636EB00DA0F51 /* FoodCell.xib */,
+				C31EE7F92134983D00B8AFBE /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C31EE80A2134A1B500B8AFBE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C3C97855213636BD00DA0F51 /* Cell */,
+				C31EE7F72134983D00B8AFBE /* FoodController.swift */,
+				C31EE80D2134A2B200B8AFBE /* FoodUIController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C3C97855213636BD00DA0F51 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C3C97856213636EB00DA0F51 /* FoodCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C31EE8002134984000B8AFBE /* LaunchScreen.storyboard in Resources */,
+				C3C97859213636EB00DA0F51 /* FoodCell.xib in Resources */,
 				C31EE7FD2134984000B8AFBE /* Assets.xcassets in Resources */,
 				C31EE7FB2134983D00B8AFBE /* Main.storyboard in Resources */,
 			);
@@ -135,8 +180,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C31EE7F82134983D00B8AFBE /* ViewController.swift in Sources */,
+				C31EE7F82134983D00B8AFBE /* FoodController.swift in Sources */,
 				C31EE7F62134983D00B8AFBE /* AppDelegate.swift in Sources */,
+				C3C97858213636EB00DA0F51 /* FoodCell.swift in Sources */,
+				C31EE80C2134A1E000B8AFBE /* Food.swift in Sources */,
+				C31EE80E2134A2B200B8AFBE /* FoodUIController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
